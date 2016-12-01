@@ -29,6 +29,10 @@ class ViewController: UIViewController {
     
     @IBAction func showMoney(_ sender: Any) {
     // showMoney is the button.
+        
+        
+        helloText.text = "Answer is: \(Double(textOne.text!)! + Double(textTwo.text!)!)"
+        
         print(textOne)
         print(textOne.text!)
         
