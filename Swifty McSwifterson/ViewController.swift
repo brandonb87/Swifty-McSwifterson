@@ -17,19 +17,31 @@ class ViewController: UIViewController {
     var tapCount = 0
     //How many times you tap the button
     
+    @IBOutlet weak var textOne: UITextField!
+    // First text field.
+    
+    
+    @IBOutlet weak var textTwo: UITextField!
+    // Second text field.
+    
+
+    
+    
     @IBAction func showMoney(_ sender: Any) {
     // showMoney is the button.
+        print(textOne)
+        print(textOne.text!)
         
-     tapCount = tapCount + 1
-        // Gives counter.
-        print (tapCount)
+        print(textTwo.text!)
         
-        
-        if tapCount >= 10 {
-            
-            helloText.text = "You tapped the button 10 times!"
-        }
     }
+    
+    
+    
+    
+    
+    
+    
     
     
     override func viewDidLoad() {
