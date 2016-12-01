@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var helloText: UILabel!
     // helloText is the label.
     
-    var tapCount = 0
+   
     //How many times you tap the button
     
     @IBOutlet weak var textOne: UITextField!
