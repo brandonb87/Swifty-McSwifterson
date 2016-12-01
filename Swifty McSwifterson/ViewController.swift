@@ -9,12 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet weak var helloText: UILabel!
     // helloText is the label.
     
-   
+    
     //How many times you tap the button
     
     @IBOutlet weak var textOne: UITextField!
@@ -24,19 +24,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var textTwo: UITextField!
     // Second text field.
     
-
+    
     
     
     @IBAction func showMoney(_ sender: Any) {
-    // showMoney is the button.
+        // showMoney is the button.
+        let addition = false
         
         
-        helloText.text = "Answer is: \(Double(textOne.text!)! + Double(textTwo.text!)!)"
-        
-        print(textOne)
-        print(textOne.text!)
-        
-        print(textTwo.text!)
+        if addition {
+            helloText.text = "Answer is: \(Double(textOne.text!)! + Double(textTwo.text!)!)"
+        } else {
+            helloText.text = "Answer is: \(Double(textOne.text!)! - Double(textTwo.text!)!)"
+        }
         
     }
     
@@ -55,12 +55,12 @@ class ViewController: UIViewController {
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
